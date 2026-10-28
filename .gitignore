@@ -1,0 +1,26 @@
+# Fichiers VMware (jamais dans Git)
+*.vmdk
+*.vmem
+*.vmsn
+*.vmss
+*.nvram
+*.lck/
+*.iso
+
+# Secrets
+*.env
+.env*
+*.key
+*.pem
+*.p12
+secrets/
+
+# Sauvegardes brutes (contiennent des hash de mots de passe)
+backups/
+*.sql
+config-*.xml
+
+# Divers
+.vscode/
+Thumbs.db
+desktop.ini

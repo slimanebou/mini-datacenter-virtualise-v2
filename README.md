@@ -19,13 +19,13 @@ La v2 corrige ces points et prouve chaque flux par une matrice de tests.
 
 | Zone | Réseau | VM (nom VMware) | IP |
 |---|---|---|---|
-| Serveurs (10) | 192.168.10.0/24 | `DC-10` — Windows Server 2022 (AD DS, DNS, DHCP, NTP) | 192.168.10.10 |
-| DMZ (20) | 192.168.20.0/24 | `WEB-20` — Debian 13, Docker (Nginx + app) | 192.168.20.10 |
-| Invités (30) | 192.168.30.0/24 | `GUEST-30` — Debian 13 graphique | 192.168.30.10 |
-| Postes admin (40) | 192.168.40.0/24 | `ADMIN-40` — Windows 11 | DHCP (relais) |
-| Bastion (50) | 192.168.50.0/24 | `BASTION-50` — Debian 13, Guacamole | 192.168.50.10 |
-| Données (60) | 192.168.60.0/24 | `DB-60` — Debian 13, MariaDB | 192.168.60.10 |
-| Toutes | WAN + 6 réseaux | `PFSENSE-GW` — pfSense | `.1` partout |
+| Serveurs (10) | 192.168.10.0/24 | `Dc-10` — Windows Server 2022 (AD DS, DNS, DHCP, NTP) | 192.168.10.10 |
+| DMZ (20) | 192.168.20.0/24 | `Web-20` — Debian 13, Docker (Nginx + app) | 192.168.20.10 |
+| Invités (30) | 192.168.30.0/24 | `Guest-30` — Debian 13 graphique | 192.168.30.10 |
+| Postes admin (40) | 192.168.40.0/24 | `Admin-40` — Windows 11 | DHCP (relais) |
+| Bastion (50) | 192.168.50.0/24 | `Bastion-50` — Debian 13, Guacamole | 192.168.50.10 |
+| Données (60) | 192.168.60.0/24 | `Db-60` — Debian 13, MariaDB | 192.168.60.10 |
+| Toutes | WAN + 6 réseaux | `pfSense-gw` — pfSense | `.1` partout |
 
 Schéma interactif et suivi des phases : [`docs/schema/schema-suivi.html`](docs/schema/schema-suivi.html)
 
@@ -33,9 +33,9 @@ Schéma interactif et suivi des phases : [`docs/schema/schema-suivi.html`](docs/
 
 | Phase | Sujet | État |
 |---|---|---|
-| 0 | Préparation | 🔄 |
-| 1 | Réseaux VMware | ⬜ |
-| 2 | pfSense | ⬜ |
+| 0 | Préparation | ✅ |
+| 1 | Réseaux VMware | ✅ |
+| 2 | pfSense | 🔄 |
 | 3 | Serveurs (10) | ⬜ |
 | 4 | Postes admin (40) | ⬜ |
 | 5 | DATA (60) | ⬜ |
@@ -50,6 +50,7 @@ Schéma interactif et suivi des phases : [`docs/schema/schema-suivi.html`](docs/
 ## Documentation par phase
 
 - [Phase 0 — Préparation et conventions](docs/00-preparation.md)
+- [Phase 1 — Réseaux VMware](docs/01-reseaux-vmware.md)
 
 ## Environnement
 

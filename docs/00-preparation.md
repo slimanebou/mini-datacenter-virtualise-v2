@@ -22,13 +22,13 @@ Les plages `.2 – .9` et `.200 – .254` restent libres (réserve).
 
 | Nom VMware | Hostname | FQDN | Rôle | IP | RAM | vCPU | Disque | Création | Phase |
 |---|---|---|---|---|---|---|---|---|---|
-| `PFSENSE-GW` | pfsense | pfsense.datacenter.lan | Pare-feu, routeur, NAT, DNS Resolver | `.1` partout | 2 Go | 2 | 20 Go | ISO pfSense | 2 |
-| `DC-10` | dc01 | dc01.datacenter.lan | AD DS, DNS, DHCP, NTP | 192.168.10.10 | 4 Go | 4 | 60 Go | ISO Windows Server 2022 | 3 |
-| `ADMIN-40` | pc-admin | pc-admin.datacenter.lan | Poste d'administration | DHCP | 4 Go | 2 | 60 Go | ISO Windows 11 | 4 |
-| `DB-60` | db01 | db01.datacenter.lan | MariaDB | 192.168.60.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 5 |
-| `WEB-20` | web01 | web01.datacenter.lan | Docker : Nginx + app | 192.168.20.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 6 |
-| `GUEST-30` | guest01 | — | Client invité | 192.168.30.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 7 |
-| `BASTION-50` | bastion | bastion.datacenter.lan | Guacamole | 192.168.50.10 | 3 Go | 2 | 20 Go | Clone Debian 13 | 8 |
+| `pfSense-gw` | pfsense | pfsense.datacenter.lan | Pare-feu, routeur, NAT, DNS Resolver | `.1` partout | 2 Go | 2 | 20 Go | ISO pfSense | 2 |
+| `Dc-10` | dc01 | dc01.datacenter.lan | AD DS, DNS, DHCP, NTP | 192.168.10.10 | 4 Go | 4 | 60 Go | ISO Windows Server 2022 | 3 |
+| `Admin-40` | pc-admin | pc-admin.datacenter.lan | Poste d'administration | DHCP | 4 Go | 2 | 60 Go | ISO Windows 11 | 4 |
+| `Db-60` | db01 | db01.datacenter.lan | MariaDB | 192.168.60.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 5 |
+| `Web-20` | web01 | web01.datacenter.lan | Docker : Nginx + app | 192.168.20.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 6 |
+| `Guest-30` | guest01 | — | Client invité | 192.168.30.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 7 |
+| `Bastion-50` | bastion | bastion.datacenter.lan | Guacamole | 192.168.50.10 | 3 Go | 2 | 20 Go | Clone Debian 13 | 8 |
 
 Total : ≈ 19 Go de RAM, 16 vCPU sur 8 cœurs physiques (sur-allocation acceptable en lab).
 
@@ -37,7 +37,7 @@ Domaine Active Directory : `datacenter.lan`.
 ## 3. Conventions
 
 ### VMware
-- Dossier des VMs : `C:\VMs\mini-dc-v2\<NOM-VMWARE>\`
+- Dossier des VMs : dossier de bibliothèque VMware `TER - Mini Datacenter`
 - Clones : **toujours en clone complet**, jamais en clone lié.
 - **Une seule carte réseau par VM** (sauf pfSense) : impossible de contourner le pare-feu.
 

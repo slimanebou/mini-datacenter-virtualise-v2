@@ -386,13 +386,13 @@ td code,.mono,p code{font-family:var(--mono);font-size:13px}
         <div class="scroll"><table>
           <thead><tr><th>VLAN</th><th>Zone</th><th>Nom VMware</th><th>VM</th><th>IP</th><th>Ressources</th></tr></thead>
           <tbody>
-            <tr><td class="mono">WAN + tous</td><td>Pare-feu</td><td class="mono">PFSENSE-GW</td><td>pfSense</td><td class="mono">.1 partout</td><td class="mono">2 Go · 2 vCPU</td></tr>
-            <tr><td class="mono">10</td><td><span class="zt zs">Serveurs</span></td><td class="mono">DC-10</td><td>Windows Server (AD, DNS, DHCP, NTP)</td><td class="mono">192.168.10.10</td><td class="mono">4 Go · 4 vCPU</td></tr>
-            <tr><td class="mono">20</td><td><span class="zt zm">DMZ</span></td><td class="mono">WEB-20</td><td>Web Docker</td><td class="mono">192.168.20.10</td><td class="mono">2 Go · 2 vCPU</td></tr>
-            <tr><td class="mono">30</td><td><span class="zt zg">Invités</span></td><td class="mono">GUEST-30</td><td>Debian</td><td class="mono">192.168.30.10</td><td class="mono">2 Go · 2 vCPU</td></tr>
-            <tr><td class="mono">40</td><td><span class="zt za">Postes admin</span></td><td class="mono">ADMIN-40</td><td>Windows 11</td><td class="mono">DHCP (relais)</td><td class="mono">4 Go · 2 vCPU</td></tr>
-            <tr><td class="mono">50</td><td><span class="zt zb">Bastion</span></td><td class="mono">BASTION-50</td><td>Guacamole</td><td class="mono">192.168.50.10</td><td class="mono">3 Go · 2 vCPU</td></tr>
-            <tr><td class="mono">60</td><td><span class="zt zd">Données</span></td><td class="mono">DB-60</td><td>MariaDB</td><td class="mono">192.168.60.10</td><td class="mono">2 Go · 2 vCPU</td></tr>
+            <tr><td class="mono">WAN + tous</td><td>Pare-feu</td><td class="mono">pfSense-gw</td><td>pfSense</td><td class="mono">.1 partout</td><td class="mono">2 Go · 2 vCPU</td></tr>
+            <tr><td class="mono">10</td><td><span class="zt zs">Serveurs</span></td><td class="mono">Dc-10</td><td>Windows Server (AD, DNS, DHCP, NTP)</td><td class="mono">192.168.10.10</td><td class="mono">4 Go · 4 vCPU</td></tr>
+            <tr><td class="mono">20</td><td><span class="zt zm">DMZ</span></td><td class="mono">Web-20</td><td>Web Docker</td><td class="mono">192.168.20.10</td><td class="mono">2 Go · 2 vCPU</td></tr>
+            <tr><td class="mono">30</td><td><span class="zt zg">Invités</span></td><td class="mono">Guest-30</td><td>Debian</td><td class="mono">192.168.30.10</td><td class="mono">2 Go · 2 vCPU</td></tr>
+            <tr><td class="mono">40</td><td><span class="zt za">Postes admin</span></td><td class="mono">Admin-40</td><td>Windows 11</td><td class="mono">DHCP (relais)</td><td class="mono">4 Go · 2 vCPU</td></tr>
+            <tr><td class="mono">50</td><td><span class="zt zb">Bastion</span></td><td class="mono">Bastion-50</td><td>Guacamole</td><td class="mono">192.168.50.10</td><td class="mono">3 Go · 2 vCPU</td></tr>
+            <tr><td class="mono">60</td><td><span class="zt zd">Données</span></td><td class="mono">Db-60</td><td>MariaDB</td><td class="mono">192.168.60.10</td><td class="mono">2 Go · 2 vCPU</td></tr>
           </tbody>
         </table></div>
         <p class="hint">Total ≈ 19 Go de RAM, 16 vCPU sur 8 cœurs. Le 3e octet = le numéro de VLAN. pfSense est en <code>.1</code> dans chaque réseau. Sous VMware, chaque « VLAN » est un LAN Segment isolé (équivalent d'un VLAN d'accès, sans tag 802.1Q).</p>

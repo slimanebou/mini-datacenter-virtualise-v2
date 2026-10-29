@@ -52,6 +52,7 @@ Schéma interactif et suivi des phases : [`docs/schema/schema-suivi.html`](docs/
 - [Phase 0 — Préparation et conventions](docs/00-preparation.md)
 - [Phase 1 — Réseaux VMware](docs/01-reseaux-vmware.md)
 
+
 ## Environnement
 
 - Hôte : Windows, VMware Workstation Pro (hyperviseur de type 2)

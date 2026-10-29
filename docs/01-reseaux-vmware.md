@@ -20,7 +20,7 @@ Un LAN Segment n'a ni DHCP VMware ni carte sur l'hôte Windows : il est totaleme
 
 | Carte VMware | Connexion | MAC | Interface pfSense prévue |
 |---|---|---|---|
-| Network Adapter | NAT (VMnet8) | à relever | WAN |
+| Network Adapter | NAT (VMnet8) | voir em0 dans pfSense | WAN |
 | Network Adapter 2 | `LAN-40-ADMIN` | 00:0C:29:F8:A7:FE | LAN (GUI + anti-lockout) |
 | Network Adapter 3 | `LAN-10-SERVEURS` | 00:0C:29:F8:A7:08 | OPT1 |
 | Network Adapter 4 | `LAN-20-DMZ` | 00:0C:29:F8:A7:12 | OPT2 |

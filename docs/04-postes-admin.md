@@ -50,3 +50,9 @@ Snapshots : `P04-pcadmin-ok`, `P04-pfsense-relais`.
 - Problème d'ordre résolu par une IP fixe temporaire : le poste avait besoin du relais pour obtenir une IP, mais il fallait la GUI pour configurer le relais.
 - Windows 11 exige un vTPM et le Secure Boot, et l'installation hors ligne nécessite de contourner l'obligation de compte en ligne.
 - pfSense 2.8.1 est disponible ; le projet reste en 2.7.2 pour ne pas changer de version en cours de route.
+
+## Captures
+
+![Tableau de bord pfSense ouvert depuis le poste admin](capture/04-pfsense-dashboard.png)
+
+![Relais DHCP : interface LAN vers 192.168.10.10](capture/04-pfsense-relais-dhcp.png)

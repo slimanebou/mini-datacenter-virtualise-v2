@@ -62,3 +62,4 @@ Snapshot : `P05-db01-ok`.
 - **Console sans copier-coller** : seules 2 commandes sont tapées dans la console (IP provisoire), tout le reste se fait en SSH depuis Admin-40.
 - **`sudo` à distance** : `ssh hôte "sudo …" > fichier` échoue, car sudo a besoin d'un terminal pour le mot de passe. Solution : écrire le fichier sur la VM, puis le copier avec `scp`.
 - **Encodage** : la redirection `>` de Windows PowerShell 5 écrit en UTF-16. Le fichier devenait illisible ; `scp` copie les octets tels quels.
+- **DNS perdu au redémarrage** : le client dhcpcd du template réécrivait `/etc/resolv.conf`. Il est désactivé (`systemctl disable --now dhcpcd`) sur chaque clone en IP fixe.

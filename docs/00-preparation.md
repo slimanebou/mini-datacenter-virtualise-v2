@@ -23,7 +23,7 @@ Les plages `.2 – .9` et `.200 – .254` restent libres (réserve).
 | Nom VMware | Hostname | FQDN | Rôle | IP | RAM | vCPU | Disque | Création | Phase |
 |---|---|---|---|---|---|---|---|---|---|
 | `pfSense-gw` | pfsense | pfsense.datacenter.lan | Pare-feu, routeur, NAT, DNS Resolver | `.1` partout | 2 Go | 2 | 20 Go | ISO pfSense | 2 |
-| `Dc-10` | dc01 | dc01.datacenter.lan | AD DS, DNS, DHCP, NTP | 192.168.10.10 | 4 Go | 4 | 60 Go | ISO Windows Server 2022 | 3 |
+| `Dc-10` | dc | dc01.datacenter.lan | AD DS, DNS, DHCP, NTP | 192.168.10.10 | 4 Go | 4 | 60 Go | ISO Windows Server 2022 | 3 |
 | `Admin-40` | pc-admin | pc-admin.datacenter.lan | Poste d'administration | DHCP | 4 Go | 2 | 60 Go | ISO Windows 11 | 4 |
 | `Db-60` | db01 | db01.datacenter.lan | MariaDB | 192.168.60.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 5 |
 | `Web-20` | web01 | web01.datacenter.lan | Docker : Nginx + app | 192.168.20.10 | 2 Go | 2 | 20 Go | Clone Debian 13 | 6 |

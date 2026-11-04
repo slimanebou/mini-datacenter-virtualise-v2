@@ -1,0 +1,7 @@
+[Unit]
+Description=Collecte des sauvegardes (db, pfSense, bastion)
+
+[Service]
+Type=oneshot
+User=bouaroua
+ExecStart=/usr/local/bin/collecte-sauvegardes.sh

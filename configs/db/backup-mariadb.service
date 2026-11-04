@@ -1,0 +1,6 @@
+[Unit]
+Description=Sauvegarde MariaDB (appdb)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/backup-mariadb.sh
